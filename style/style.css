@@ -33,6 +33,7 @@ footer {
     padding: 1%;
     clear: both;
     background-image: linear-gradient(to right top, #f4ff00, #ffd135, #ffa772, #ff90a7, #ff8ecd, #ec9de5, #d7acf6, #c1b9ff, #a4c8ff, #87d7ff, #72e3ff, #71edff);
+    font-family: 'Consolas', monospace;
 }
 
 #sect-1 {
