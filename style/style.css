@@ -23,7 +23,7 @@ body {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 4vw;
     margin: 0%;
 }
 
@@ -64,7 +64,6 @@ footer {
 
 #sect-2-title {
     float: left;
-
     height: 100%;
 }
 
@@ -122,6 +121,11 @@ footer {
     }
     article {
         border: black solid 1px;
-        
+    }
+    body {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 30px;
     }
 }
