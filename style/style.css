@@ -93,13 +93,12 @@ footer {
 }
 
 #sect-4 {
-    height: 27em;
+    height: 29em;
 }
 
 #sect-4-left {
     float:left;
     width: 75%;
-    height: 100%;
     background-color: #ec9de5;
 }
 
