@@ -31,6 +31,7 @@ footer {
     text-align: center;
     padding: 1%;
     clear: both;
+    background-image: linear-gradient(to right top, #f4ff00, #ffd135, #ffa772, #ff90a7, #ff8ecd, #ec9de5, #d7acf6, #c1b9ff, #a4c8ff, #87d7ff, #72e3ff, #71edff);
 }
 
 #sect-1 {
@@ -44,6 +45,10 @@ footer {
     font-family: 'Ms Madi', cursive;
 }
 
+#sect-2 {
+    background-color: #72e3ff;
+}
+
 #title {
     font-size: 100px;
     margin-top: 0%;
@@ -54,6 +59,7 @@ footer {
 #sub-title {
     font-size: 50px;
     padding-bottom: 8%;
+    margin-bottom: 0%;
 }
 
 #sect-2-title {
@@ -74,14 +80,14 @@ footer {
 
 #sect-3-left {
     float:left;
-    /* background-color: orangered; */
+    background-color: orangered;/*here.*/
     width: 50%;
     height: 100%;
 } 
 
 #sect-3-right {
     float:right;
-    /* background-color: darkmagenta; */
+    background-color: darkmagenta;/*here.*/
     width: 50%;
     height: 100%;
 
@@ -95,12 +101,14 @@ footer {
     float:left;
     width: 75%;
     height: 100%;
+    background-color: #ec9de5;
 }
 
 #sect-4-right {
     float:right;
     width: 25%;
     height: 100%;
+    background-color: gold;
 }
 
 @media screen and (max-width: 1200px) {
