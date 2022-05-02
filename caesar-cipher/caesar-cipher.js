@@ -71,22 +71,23 @@ window.onload = function () {
         let string = document.getElementsByTagName("input")[0].value;
         let res = caesarCipherEncrypt(string, getKey());
         let display = document.getElementById("result-area");
-        display.innerHTML = "Res: " + res;
+        display.innerHTML = "<strong>Res: </strong>" + res;
     }
 
     decodeButton.onclick = function () {
         let string = document.getElementsByTagName("input")[0].value;
         let res = caesarCipherDecrypt(string, getKey());
         let display = document.getElementById("result-area");
-        display.innerHTML = "Res: " + res;
+        display.innerHTML = "<strong>Res: </strong>" + res;
     }
 
     superButton.onclick = function () {
         let string = document.getElementsByTagName("input")[0].value;
+        document.getElementById("result-area").innerHTML = " ";
         for (let i = 1; i < 26; i++) {
             let res = caesarCipherDecrypt(string, i);
             let display = document.getElementById("result-area");
-            display.innerHTML += "Res" + i + ": " + res + "<br>";
+            display.innerHTML += "<strong>Res" + i + ": </strong>" + res + "<br>";
         }
     }
 
