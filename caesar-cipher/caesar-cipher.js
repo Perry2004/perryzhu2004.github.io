@@ -90,5 +90,4 @@ window.onload = function () {
             display.innerHTML += "<strong>Res" + i + ": </strong>" + res + "<br>";
         }
     }
-
 }
