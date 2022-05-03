@@ -31,3 +31,8 @@ function getNewContent() {
         alert('Sorry, your browser doesn\'t support XMLHttpRequest');
     }
 }
+
+
+window.onload = function () {
+    getNewContent();
+}
