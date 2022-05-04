@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cells {
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    margin: 3px;
+}
+
+.rows {
+    clear: both;
+}
+
+.unclicked {
+    background-color: lightgray;
+}
+
+.user1-clicked {
+    background-color: lightcoral;
+}
+
+.user2-clicked {
+    background-color: lightgreen;
+}
+
+#extra-message {
+    font-size: 50px;
+}
