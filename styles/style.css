@@ -2,21 +2,6 @@
     box-sizing: border-box;
 }
 
-section {
-    height: 25em;
-    width: 100%;
-    margin: auto;
-    /* padding: 1%; */
-    /* margin-top: 1%; */
-
-}
-
-article {
-    padding: 2%;
-    font-size: 1.2em;
-    height: 100%;
-}
-
 body {
     margin: 0%;
     height: 100%;
@@ -36,6 +21,16 @@ footer {
     font-family: 'Consolas', monospace;
 }
 
+article {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.content-sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #sect-1 {
     background-image: linear-gradient(to right top, #f4ff00, #ffd135, #ffa772, #ff90a7, #ff8ecd, #ec9de5, #d7acf6, #c1b9ff, #a4c8ff, #87d7ff, #72e3ff, #71edff);
     background-size: cover;
@@ -45,10 +40,6 @@ footer {
     height: fit-content;
     margin: 0%;
     font-family: 'Ms Madi', cursive;
-}
-
-#sect-2 {
-    background-color: #72e3ff;
 }
 
 #title {
@@ -64,69 +55,57 @@ footer {
     margin-bottom: 0%;
 }
 
+#sect-2 {
+    background-color: #72e3ff;
+}
+
+#person-intro {
+    display: flex;
+}
+
 #sect-2-title {
-    float: left;
-    height: 100%;
+    flex-basis: 30%;
+    align-items: center;
+    display: flex;
 }
 
 #sect-2-content {
-    float: right;
-    width: 75%;
-}
-
-#sect-2-title-text {
-    padding-top: 50%;
-    padding-bottom: 50%;
+    flex-basis: 70%;
 }
 
 #sect-3-left {
-    float:left;
-    background-color: orangered;/*here.*/
-    width: 50%;
-    height: 100%;
-} 
-
-#sect-3-right {
-    float:right;
-    background-color: mediumspringgreen;
-    width: 50%;
-    height: 100%;
-
+    background-color: orangered;
+    flex-basis: 50%;
 }
 
-#sect-4 {
-    height: 33em;
+#sect-3-right {
+    background-color: mediumspringgreen;
+    flex-basis: 50%;
 }
 
 #sect-4-left {
-    float:left;
-    width: 75%;
     background-color: #ec9de5;
+    flex-basis: 60%;
 }
 
 #sect-4-right {
-    float:right;
-    width: 25%;
-    height: 100%;
     background-color: gold;
+    flex-basis: 40%;
 }
 
-@media screen and (max-width: 1200px) {
-     * {
-        clear: both !important; 
-        float: none !important;
-        height: fit-content !important;
-        width: 100% !important;
-        margin: 0% !important;
-        padding: 0% !important;
+@media screen and (max-width: 768px) {
+
+    .content-sections,
+    #person-intro {
+        display: block;
     }
+
     article {
-        border: black solid 1px;
+        font-size: 2.5vw;
+        padding: 10px;
     }
-    body {
-        font-size: 15px;
-    }
+
     h3 {
-        font-size: 30px;
+        font-size: 5vw;
     }
 }
