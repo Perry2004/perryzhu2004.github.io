@@ -5,4 +5,6 @@ function domGuard() {
     });
 }
 
-setTimeout(domGuard, 100)
+window.onload = () => {
+    setTimeout(domGuard, 100);
+}
