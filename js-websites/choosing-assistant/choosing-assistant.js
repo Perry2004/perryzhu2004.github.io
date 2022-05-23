@@ -20,4 +20,7 @@ window.onload = function () {
         let outputDiv = document.getElementsByTagName("div")[0];
         outputDiv.innerHTML = choosingAssistant(inputValue);
     }
+
+    let input = document.getElementsByTagName("input")[0];
+    input.focus();
 }
