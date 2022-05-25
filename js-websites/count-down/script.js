@@ -1,5 +1,5 @@
 function updateTimer() {
-    future = Date.parse("June 7, 2022 9::00");
+    future = Date.parse("2022-06-07T09:00:00"); //standard ISO date format. Nonstandard format are not supported by webkit-based browsers. 
     now = new Date();
     diff = future - now;
 
