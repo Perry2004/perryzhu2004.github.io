@@ -1,0 +1,33 @@
+#clock-face {
+    margin: auto;
+    background-image: url(./clock-face.png);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+}
+
+.clock-hands {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+}
+
+#hour-hand {
+    width: 20%;
+    height: 5px;
+}
+
+#minute-hand {
+    width: 30%;
+    height: 2px;
+}
+
+#second-hand {
+    width: 45%;
+    height: 1px;
+}
