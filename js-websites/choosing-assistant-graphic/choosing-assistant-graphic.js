@@ -7,7 +7,7 @@ let executed = false;
 
 start.onclick = function () {
   if (!executed) {
-    let options = input.value.split(',').length > 1 ? input.value.split(', ') : input.value.split('， ');
+    let options = input.value.split(',').length > 1 ? input.value.split(', ') : input.value.split('，');
     for (let i = 0; i < options.length; i++) {
       let btn = document.createElement('button');
       let text = document.createTextNode(`${options[i]}`);
