@@ -5,7 +5,9 @@ window.onload = () => {
 
   btn1.onclick = () => {
     fetch("。/txt-1.txt").then((text) => {
-      p.innerHTML = text;
+      text.text().then((txt) => {
+        p.innerHTML = txt;
+      })
     }).catch((error) => {
       p.innerHTML = error;
     })
@@ -13,7 +15,9 @@ window.onload = () => {
 
   btn2.onclick = () => {
     fetch("。/txt-2.txt").then((text) => {
-      p.innerHTML = text;
+      text.text().then((txt) => {
+        p.innerHTML = txt;
+      })
     }).catch((error) => {
       p.innerHTML = error;
     })
