@@ -4,7 +4,7 @@ window.onload = () => {
   const btn2 = document.querySelector("#btn-2");
 
   btn1.onclick = () => {
-    fetch("。/txt-1.txt").then((text) => {
+    fetch("./txt-1.txt").then((text) => {
       text.text().then((txt) => {
         p.innerHTML = txt;
       })
@@ -14,7 +14,7 @@ window.onload = () => {
   }
 
   btn2.onclick = () => {
-    fetch("。/txt-2.txt").then((text) => {
+    fetch("./txt-2.txt").then((text) => {
       text.text().then((txt) => {
         p.innerHTML = txt;
       })
