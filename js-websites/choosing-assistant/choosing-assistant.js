@@ -1,5 +1,5 @@
 function choosingAssistant (str) {
-    let arr = str.split(', ');
+    let arr = str.value.split(",").length > 1 ? str.value.split(", ") : str.value.split("，");
     let res = arr[generateRandomInt(0, arr.length - 1)];
     return res;
 }
