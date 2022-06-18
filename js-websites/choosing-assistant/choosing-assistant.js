@@ -19,6 +19,10 @@ window.onload = function () {
         let inputValue = document.getElementsByTagName("input")[0].value;
         let outputDiv = document.getElementsByTagName("div")[0];
         outputDiv.innerHTML = choosingAssistant(inputValue);
+
+        this.onclick = function () {
+          alert("You can only choose once. Follow the instruction of the fate. ")
+        }
     }
 
     let input = document.getElementsByTagName("input")[0];
