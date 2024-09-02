@@ -73,7 +73,28 @@ body main #page-1 h1 {
   transform: translate(-50%, -50%);
 }
 body main #page-2 {
-  background-color: blue;
+  display: flex;
+}
+body main #page-2 #left-column {
+  width: 50%;
+}
+body main #page-2 #left-column h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+body main #page-2 #left-column #avatar-container {
+  width: 80%;
+  height: 80%;
+  background-color: red;
+}
+body main #page-2 #right-column {
+  width: 50%;
+  height: 100%;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 body main #page-3 {
   background-color: green;

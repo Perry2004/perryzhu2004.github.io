@@ -33,7 +33,7 @@ body {
                 top: 0;
                 left: 0;
 
-                
+
                 #logo {
                     width: 4rem;
                     aspect-ratio: 1;
@@ -81,7 +81,33 @@ body {
         }
 
         #page-2 {
-            background-color: blue;
+            display: flex;
+
+            #left-column {
+                width: 50%;
+
+                h2 {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                    
+                }
+
+                #avatar-container {
+                    width: 80%;
+                    height: 80%;
+                    background-color: red;
+                }
+            }
+
+            #right-column {
+                width: 50%;
+                height: 100%;
+                padding-left: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
 
         #page-3 {
