@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+    main {
+        .pages {
+            height: 100vh;
+            width: 100%;
+            padding: 3rem;
+        }
+
+        #page-1 {
+            background-image: url(/frontend/src/images/pexels-perry-z-1662054943-27758872.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding-top: 0;
+
+            nav {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                backdrop-filter: blur(20px);
+                padding: 1rem 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                
+                #logo {
+                    width: 4rem;
+                    aspect-ratio: 1;
+                    background-image: url(/frontend/src/images/white_logo_transparent_background.png);
+                    background-size: contain;
+                    border-radius: 50%;
+                    backdrop-filter: invert(1);
+                    justify-self: flex-start;
+                    position: relative;
+                    left: 3%;
+                }
+
+                #links-container {
+                    justify-self: flex-end;
+                    width: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        padding: 1rem;
+
+                        &:hover {
+                            background-color: black;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                color: white;
+                font-size: 5rem;
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        #page-2 {
+            background-color: blue;
+        }
+
+        #page-3 {
+            background-color: green;
+        }
+
+        #page-4 {
+            background-color: yellow;
+        }
+
+        #page-5 {
+            background-color: purple;
+        }
+    }
+}
