@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1"
   }
 }

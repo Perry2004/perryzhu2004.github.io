@@ -4,22 +4,28 @@
   box-sizing: border-box;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   width: 100%;
 }
-body main .pages {
+html body main .pages {
   height: 100vh;
   width: 100%;
+  max-width: 1500px;
   padding: 3rem;
+  margin: auto;
 }
-body main #page-1 {
+html body main #page-1 {
   background-image: url(/frontend/src/images/pexels-perry-z-1662054943-27758872.jpg);
   background-size: cover;
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.3);
   padding-top: 0;
+  max-width: none;
 }
-body main #page-1 nav {
+html body main #page-1 nav {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -32,7 +38,7 @@ body main #page-1 nav {
   top: 0;
   left: 0;
 }
-body main #page-1 nav #logo {
+html body main #page-1 nav #logo {
   width: 4rem;
   aspect-ratio: 1;
   background-image: url(/frontend/src/images/white_logo_transparent_background.png);
@@ -44,14 +50,14 @@ body main #page-1 nav #logo {
   position: relative;
   left: 3%;
 }
-body main #page-1 nav #links-container {
+html body main #page-1 nav #links-container {
   justify-self: flex-end;
   width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-body main #page-1 nav #links-container a {
+html body main #page-1 nav #links-container a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -59,11 +65,11 @@ body main #page-1 nav #links-container a {
   transition: 0.3s;
   padding: 1rem;
 }
-body main #page-1 nav #links-container a:hover {
+html body main #page-1 nav #links-container a:hover {
   background-color: black;
   border-radius: 10px;
 }
-body main #page-1 h1 {
+html body main #page-1 h1 {
   color: white;
   font-size: 5rem;
   font-weight: bold;
@@ -71,38 +77,47 @@ body main #page-1 h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 10px;
 }
-body main #page-2 {
+html body main #page-2 {
   display: flex;
 }
-body main #page-2 #left-column {
+html body main #page-2 #left-column {
   width: 50%;
 }
-body main #page-2 #left-column h2 {
+html body main #page-2 #left-column h2 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-body main #page-2 #left-column #avatar-container {
+html body main #page-2 #left-column #avatar-container {
   width: 80%;
   height: 80%;
   background-color: red;
 }
-body main #page-2 #right-column {
+html body main #page-2 #right-column {
   width: 50%;
   height: 100%;
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
-body main #page-3 {
+html body main #page-2 #right-column li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+html body main #page-3 {
   display: flex;
   background-color: lightblue;
   flex-direction: column;
   align-items: center;
 }
-body main #page-3 h2 {
+html body main #page-3 h2 {
   width: 100%;
   height: 20%;
   display: block;
@@ -112,7 +127,7 @@ body main #page-3 h2 {
   font-size: 3rem;
   font-weight: bold;
 }
-body main #page-3 #grid {
+html body main #page-3 #grid {
   width: 100%;
   height: 80%;
   padding: 3rem;
@@ -121,28 +136,121 @@ body main #page-3 #grid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
-body main #page-3 #grid .grid-sections {
+html body main #page-3 #grid .grid-sections {
   background-color: red;
 }
-body main #page-3 #grid #card-1 {
+html body main #page-3 #grid #card-1 {
   grid-row: 1/2;
   grid-column: 1/3;
 }
-body main #page-3 #grid #card-2 {
+html body main #page-3 #grid #card-2 {
   grid-row: 1/2;
   grid-column: 3/4;
 }
-body main #page-3 #grid #card-3 {
+html body main #page-3 #grid #card-3 {
   grid-row: 1/3;
   grid-column: 4/5;
 }
-body main #page-3 #grid #card-4 {
+html body main #page-3 #grid #card-4 {
   grid-row: 2/3;
   grid-column: 1/4;
 }
-body main #page-4 {
-  background-color: yellow;
+html body main #page-4 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 3rem 0;
 }
-body main #page-5 {
-  background-color: purple;
+html body main #page-4 #project-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+html body main #page-4 #project-container .project-cards {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  padding-left: 1rem;
+  background-color: lightgreen;
+}
+html body main #page-4 #project-container .project-cards h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+html body main #page-4 #project-container .project-cards h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+html body main #page-4 #project-container .project-cards p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+html body main #page-4 #project-container .project-cards a {
+  color: black;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+html body main #page-4 #project-container .project-cards a:hover {
+  color: rgb(184, 10, 94);
+}
+html body main #page-5 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+html body main #page-5 #photo-container {
+  width: 100%;
+  height: 80%;
+  background-color: brown;
+}
+html body footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+html body footer #middle {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 1000px;
+}
+html body footer #middle #social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+html body footer #middle #social-media-icons p i {
+  transition: 0.3s;
+}
+html body footer #middle #social-media-icons p i:hover {
+  color: rgb(184, 10, 94);
+}
+html body footer #middle #contacts {
+  width: 50%;
+  margin: 1rem 2rem;
+  text-align: center;
+}
+html body footer a {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+html body footer a:hover {
+  color: rgb(184, 10, 94);
 }/*# sourceMappingURL=main.css.map */

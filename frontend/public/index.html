@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PerryZ's Website</title>
     <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="../node_modules/@flaticon/flaticon-uicons/css/all/all.css">
+    <script type="module" src="../src/scripts/main.js"></script>
   </head>
 
   <body>
@@ -18,7 +20,7 @@
             <a href="#page-3">Skills</a>
             <a href="#page-4">Projects</a>
             <a href="#page-5">Photography</a>
-            <a href="">Contact</a>
+            <a id="contact-link">Contact</a>
           </div>
         </nav>
         <h1>
@@ -82,19 +84,85 @@
         <div id="project-container">
           <div class="project-cards">
             <h3>
-              UNO Game Management System
+              <a href="https://github.students.cs.ubc.ca/CPSC304-2024S-T2/project_e1h8m_i6m6h_t9n6o">
+                UNO Game Management System
+              </a>
             </h3>
+            <h4>
+              Full-Stack Data Management Project
+            </h4>
+            <p class="time">
+              Jul-Aug 2024
+            </p>
+            <ul>
+              <li>Designed and developed a program that manages all game data in a UNO card game in 5 pages plus an
+                administrator authentication page in a group of 3.</li>
+              <li>Constructed a front-end interface with comprehensive form validation, clear visual notifications,
+                animations, and smooth interaction by avoiding extra refresh using asynchronous fetches to replace the
+                default form submission behavior using HTML, CSS, and JavaScript.</li>
+              <li>Utilized RESTful API to set up the communication between front- and back-end using Express framework
+                and used cookies and local storage to enable previous state restoration and authentication state
+                preservation for a better interactive experience.</li>
+              <li>Tailored SQL DDLs and DML templates in the backend model with sanitization to prevent injection for
+                functionalities, including nested group-by aggregation, division, and view creations to handle user
+                request actions triggered by front-end event listeners.</li>
+            </ul>
           </div>
           <div class="project-cards">
             <h3>
-              Predict Student Knowledge Level using KNN Classificaiton
+              <a href="https://github.com/Perry2004/DSCI100Group29Repo">
+                Predict Student Knowledge Level Base on Study Time and Exam Performance
+              </a>
             </h3>
+            <h4>
+              Supervised Machine Learning Project Using KNN Classification
+            </h4>
+            <p class="time">
+              Oct-Dec 2023
+            </p>
+            <ul>
+              <li>Performed a KNN Classification algorithm using Python to predict students’ knowledge levels based on
+                their study time and exam performance on the User Knowledge Modeling database.</li>
+              <li>Cleaned and wrangled the imported data to achieve a tidy form by pivoting, dropping NAs, removing and
+                renaming variables, and combining the originally separated dataset into a comprehensive one.</li>
+              <li>Split the tidied dataset into training and testing sets in a proportion of 3/1 while stratifying on
+                the target variable to improve testing effectiveness.</li>
+              <li>Determined the prediction variable set by performing summarization with multiple levels of groupings
+                and aggregations and by visualizing 2d colored scatter plots to spot the potential trends.</li>
+              <li>Set up the training pipeline and determine the optimal K parameter by performing a 10-fold
+                cross-validation to achieve a final accuracy of 83.17%.</li>
+            </ul>
           </div>
           <div class="project-cards">
             <h3>
-              Two-Player Snake Game
+              <a href="https://github.com/Perry2004/two-player-snake-game">
+                Two-Player Snake Game
+              </a>
             </h3>
+            <h4>
+              Real-Time Interactive Game With MatLab/Java
+            </h4>
+            <p class="time">
+              Feb-Dec 2023
+            </p>
+            <ul>
+              <li>Later migrated the MatLab game to Java with two interfaces with Swing and Lanterna libraries in an
+                object-oriented manner. Empowered with singleton, observer, and MVC design patterns to divide the
+                project into separate components and hierarchies with well-specified interfaces for better
+                maintainability and scalability. The OOP design also features extra functionality for serializing and
+                exporting all game data into JSON for further reuse.</li>
+              <li>Maintained 100% unit test coverage check while developing the Java version using JUnit.</li>
+              <li>Constructed a video game that allows two players to play the traditional Snake game on the same
+                computer. Won the 1st place winner of the Fundamentals of Engineering Design Showcase with the
+                contribution of developing the main game-loop logic in a group of 4 for being the best group among all
+                first-year students in the OSU College of Engineering.</li>
+              <li>Developed the game in MatLab with the provided game engine by initializing the game window with
+                self-created stripes, modeling the gameboard in a 2d matrix, maintaining a synchronous execution to tick
+                the snake movements and food generation while handling user inputs asynchronously by event listeners and
+                model updates with callback functions.</li>
+            </ul>
           </div>
+        </div>
         </div>
       </section>
       <section class="pages" id="page-5">
@@ -108,17 +176,48 @@
       <div>
         Created by PerryZ at Vancouver, BC, Canada, under the sunshine and beside the coast.
       </div>
-      <div id="social-media-icons">
-        <p>instagram</p>
-        <p>linkedin</p>
-        <p>github</p>
-        <p>pexels</p>
+      <div id="middle">
+        <div id="social-media-icons">
+          <p>
+            <i class="fi fi-brands-instagram">
+              <a href="https://www.instagram.com/perryzhu2004/" target="_blank">
+                Instagram
+              </a>
+            </i>
+          </p>
+          <p>
+            <i class="fi fi-brands-linkedin">
+              <a href="https://www.linkedin.com/in/perry-z-24a826249/" target="_blank">
+                Linkedin
+              </a>
+            </i>
+          </p>
+          <p>
+            <i class="fi fi-brands-github">
+              <a href="https://github.com/Perry2004" target="_blank">
+                GitHub
+              </a>
+            </i>
+          </p>
+          <p>
+            <i class="fi fi-br-picture">
+              <a href="https://www.pexels.com/@perry-z-1662054943/" target="_blank">
+                Pexels
+              </a>
+            </i>
+          </p>
+        </div>
+        <div id="contacts">
+          <p>
+            Bug Report? Head to <a href="https://github.com/Perry2004/perry2004.github.io/issues">GitHub Issues</a>
+          </p>
+          <p>
+            Contact Me? Email: <a href="mailto:perryzhu2004@outlook.com">perryzhu2004@outlook.com</a>
+          </p>
+        </div>
       </div>
       <p>
-        Bug Report? Head to <a href="https://github.com/Perry2004/perry2004.github.io/issues">GitHub Issues</a>
-      </p>
-      <p>
-        Contact Me? Email: <a href="mailto:perryzhu2004@outlook.com">perryzhu2004@outlook.com</a>
+        Powered by Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
       </p>
       <p>
         &copy; 2022-2024 PerryZ. All rights reserved.
